@@ -29,13 +29,14 @@ Take a look inside the [`exampleSite`](//github.com/christianmendoza/hugo-split-
 
 ### Use an image
 
-Set `enable` to `true`. Add your image to the `static` folder and change `file` to the location of your image accordingly. By default the image position is centered, however you can specify your own by supplying `position` with a valid CSS position.
+Set `enable` to `true`. Add your image(s) to the `static` folder and change `files` to the location of your image(s) accordingly. By default the image position is centered, however you can specify your own by supplying `position` with a valid CSS position. If you specify multiple images, you can edit the time duration each image is shown by supplying `timer` (in milliseconds).
 
 ```toml
 [[params.visual.image]]
   enable = true
-  file = "images/background.jpg"
+  files = ["images/background.jpg"]
   position = "center center"
+  timer = 10000 # ms
 ```
 
 

@@ -16,6 +16,23 @@
 
       </div>
 
+{{if gt (len .Site.Params.visual.image.files) 1}}
+<script>
+var img = {{ apply .Site.Params.visual.image.files "absURL" "." }};
+var next = 1;
+function rollImage(i) {
+    var n = img[next];  // Select next image
+    $('.fs-split .split-image').animate({'opacity': 0.01}, 500, function() {$(this).css('background-image', 'url("' + n + '")').animate({'opacity': 1}, 500);});
+    next ++;
+    next %= img.length; // Preload next image
+    $('.split-image').html('<img src="' + img[next] + '" style="display: none;">');
+    setTimeout(rollImage, {{ if .Site.Params.visual.image.timer }}{{ .Site.Params.visual.image.timer }}{{ else }}10000{{ end }} );
+}
+$('.split-image').html('<img src="' + img[next] + '" style="display: none;">');
+setTimeout(rollImage, {{ if .Site.Params.visual.image.timer }}{{ .Site.Params.visual.image.timer }}{{ else }}10000{{ end }} );
+</script>
+{{end}}
+
     <!-- Video -->
     {{ else if .Site.Params.visual.video.enable }}
 

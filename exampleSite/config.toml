@@ -34,8 +34,9 @@ copyright = "&copy;2017 Your Name"
     # Image
     [params.visual.image]
       enable = true
-      file = "images/background.jpg"
+      files = ["images/background.jpg", "images/background2.jpg"]
       position = "center center"
+      timer = 10000 # ms
 
     # Video
     [params.visual.video]
