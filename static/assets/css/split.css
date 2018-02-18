@@ -6,8 +6,7 @@ Template URI: https://onepagelove.com/split
 Description: Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content.
 */
 /* -- CSS Reset -- */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
-@import url("https://fonts.googleapis.com/css?family=Lora");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -99,11 +98,11 @@ a:hover {
     opacity: 1; } }
 
 html {
-  background-color: #061C30; }
+  background-color: #113106; }
 
 body.page-template-page-fullsingle-split {
-  background-color: #061C30;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #113106;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 21px;
   line-height: 33px;
@@ -128,6 +127,7 @@ body.page-template-page-fullsingle-split {
   .fs-split .split-image {
     width: 50%;
     height: 100vh;
+    background-position: center center;
     background-size: cover; }
     @media (max-width: 800px) {
       .fs-split .split-image {
@@ -151,7 +151,7 @@ body.page-template-page-fullsingle-split {
         width: 100%;
         height: auto; } }
     .fs-split .split-content .split-content-vertically-center {
-      padding: 80px;
+      padding: 20px 80px;
       max-width: 640px;
       margin-top: auto;
       margin-bottom: auto; }
@@ -165,7 +165,7 @@ body.page-template-page-fullsingle-split {
 .split-intro {
   font-weight: 600;
   font-size: 64px;
-  line-height: 80px;
+  line-height: 60px;
   letter-spacing: -2px; }
   .split-intro h1 {
     font-weight: 400;
@@ -174,13 +174,13 @@ body.page-template-page-fullsingle-split {
     line-height: 16px;
     margin-bottom: 40px;
     letter-spacing: 0.4px;
-    color: #47bec7; }
+    color: #008000; }
   .split-intro .tagline {
-    color: #CCCCCC; }
+    color: #CCCCCC;
+    line-height: 40px; }
 
 .split-bio {
-  padding: 40px 0 40px 0;
-  font-family: 'Lora', serif; }
+  padding: 40px 0 40px 0; }
   @media (max-width: 1200px) {
     .split-bio {
       padding: 30px 0; } }
@@ -194,9 +194,9 @@ body.page-template-page-fullsingle-split {
     transition-duration: 0.5s;
     border-bottom: 1px dotted #848d96; }
     .split-bio a:hover {
-      color: #CA486d;
+      color: #008000;
       transition-duration: 0.1s;
-      border-bottom: 1px dotted #CA486d; }
+      border-bottom: 1px dotted #008000; }
 
 .split-lists .split-list {
   width: 30%;
@@ -211,7 +211,7 @@ body.page-template-page-fullsingle-split {
     text-transform: uppercase;
     font-size: 11px;
     line-height: 11px;
-    margin-bottom: 31px;
+    margin-bottom: 20px;
     color: #848d96;
     letter-spacing: 2px;
     opacity: 0.5; }
@@ -223,12 +223,11 @@ body.page-template-page-fullsingle-split {
       color: #848d96;
       transition-duration: 0.5s; }
       .split-lists .split-list ul li a:hover {
-        color: #CA486d;
+        color: #008000;
         transition-duration: 0.1s; }
 
 .split-footnote {
-  padding: 5px 0px 20px 0px;
-  font-family: 'Lora', serif; }
+  padding: 5px 0px 20px 0px; }
   .split-footnote p {
     font-size: 14px;
     line-height: 14px;
@@ -238,9 +237,9 @@ body.page-template-page-fullsingle-split {
     transition-duration: 0.5s;
     border-bottom: 1px dotted #848d96; }
     .split-footnote a:hover {
-      color: #CA486d;
+      color: #008000;
       transition-duration: 0.1s;
-      border-bottom: 1px dotted #CA486d; }
+      border-bottom: 1px dotted #008000; }
 
 .split-credit {
   opacity: 0.4; }
