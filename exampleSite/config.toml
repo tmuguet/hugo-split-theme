@@ -71,14 +71,17 @@ copyright = "&copy;2017 Your Name"
       [[params.links.list2.link]]
         text = "Twitter"
         url = "#"
+        icon = "twitter"
 
       [[params.links.list2.link]]
         text = "Instagram"
         url = "#"
+        icon = "instagram"
 
       [[params.links.list2.link]]
         text = "Dribbble"
         url = "#"
+        icon = "dribbble"
 
   # Links List #3
   [[params.links]]
