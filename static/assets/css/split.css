@@ -226,6 +226,22 @@ body.page-template-page-fullsingle-split {
         color: #CA486d;
         transition-duration: 0.1s; }
 
+.split-footnote {
+  padding: 5px 0px 20px 0px;
+  font-family: 'Lora', serif; }
+  .split-footnote p {
+    font-size: 14px;
+    line-height: 14px;
+    color: #848d96; }
+  .split-footnote a {
+    color: #848d96;
+    transition-duration: 0.5s;
+    border-bottom: 1px dotted #848d96; }
+    .split-footnote a:hover {
+      color: #CA486d;
+      transition-duration: 0.1s;
+      border-bottom: 1px dotted #CA486d; }
+
 .split-credit {
   opacity: 0.4; }
   .split-credit p {

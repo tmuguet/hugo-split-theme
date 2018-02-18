@@ -27,6 +27,7 @@ copyright = "&copy;2017 Your Name"
     name = "Jenny Jones"
     tagline = "Designer. Stylist. Nomad."
     bio = "Donec at libero id lectus porta dapibus eu in nibh. Cras id mauris sapien. Fusce viverra [luctus urna](#) ac rutrum. Duis semper elit eu mi facilisis eleifend. Donec semper, [ipsum in](#) malesuada congue, [purus sem](#) ullamcorper massa, sit amet lacinia nibh enim sed massa."
+    footnote = "Want to find out more? [Say hi](mailto:hello@example.org)!"
 
   # Section - Visual
   [params.visual]
