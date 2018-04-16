@@ -27,6 +27,7 @@ copyright = "&copy;2017 Your Name"
     name = "Jenny Jones"
     tagline = "Designer. Stylist. Nomad."
     bio = "Donec at libero id lectus porta dapibus eu in nibh. Cras id mauris sapien. Fusce viverra [luctus urna](#) ac rutrum. Duis semper elit eu mi facilisis eleifend. Donec semper, [ipsum in](#) malesuada congue, [purus sem](#) ullamcorper massa, sit amet lacinia nibh enim sed massa."
+    footnote = "Want to find out more? [Say hi](mailto:hello@example.org)!"
 
   # Section - Visual
   [params.visual]
@@ -34,8 +35,9 @@ copyright = "&copy;2017 Your Name"
     # Image
     [params.visual.image]
       enable = true
-      file = "images/background.jpg"
+      files = ["images/background.jpg", "images/background2.jpg"]
       position = "center center"
+      timer = 10000 # ms
 
     # Video
     [params.visual.video]
@@ -71,14 +73,17 @@ copyright = "&copy;2017 Your Name"
       [[params.links.list2.link]]
         text = "Twitter"
         url = "#"
+        icon = "twitter"
 
       [[params.links.list2.link]]
         text = "Instagram"
         url = "#"
+        icon = "instagram"
 
       [[params.links.list2.link]]
         text = "Dribbble"
         url = "#"
+        icon = "dribbble"
 
   # Links List #3
   [[params.links]]

@@ -23,13 +23,16 @@
 
 <!-- Styles -->
 <link rel="stylesheet" href="{{ "assets/css/split.css" | absURL }}" type="text/css" media="screen" />
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/fontawesome.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/brands.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/solid.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
 <!-- Image Styles -->
 {{ if .Site.Params.visual.image.enable }}
   <style type="text/css">
-  {{ if .Site.Params.visual.image.file }}
-    .fs-split .split-image { background-image: url("{{ .Site.Params.visual.image.file | absURL }}"); background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center{{ end }}; }
+  {{ if .Site.Params.visual.image.files }}
+    .fs-split .split-image { background-image: url("{{ index .Site.Params.visual.image.files 0 | absURL }}"); background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center{{ end }}; }
   {{ end }}
   </style>
 {{ end }}
@@ -38,3 +41,8 @@
 {{ if and (.Site.GoogleAnalytics) (not (in (printf "%#v" .Site.BaseURL) "localhost")) }}
   {{ template "_internal/google_analytics.html" . }}
 {{ end }}
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>

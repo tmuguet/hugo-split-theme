@@ -245,7 +245,35 @@ body.page-template-page-fullsingle-split {
 
 		}
 
-	}	
+	}
+
+}
+
+//-------------------------------------------------------------------------------
+// Footnote
+//-------------------------------------------------------------------------------
+
+.split-footnote {
+	padding: 5px 0px 20px 0px;
+	font-family: 'Lora', serif;
+	p {
+		font-size: 14px;
+		line-height: 14px;
+		color: $color-text;
+	}
+
+	a {
+		color: $color-link;
+		transition-duration: 0.5s;
+		border-bottom: 1px dotted $color-link;
+
+		&:hover {
+			color: $color-link-hover;
+			transition-duration: 0.1s;
+			border-bottom: 1px dotted $color-link-hover;
+		}
+
+	}
 
 }
 
