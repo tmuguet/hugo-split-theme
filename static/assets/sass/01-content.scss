@@ -286,8 +286,16 @@ body.page-template-page-fullsingle-split {
 		font-size: 12px; 
 		line-height: 14px;
 
-		a { 
+		a {
 			color: $color-text;
+			transition-duration: 0.5s;
+			border-bottom: 1px dotted $color-link;
+
+			&:hover {
+				color: $color-link-hover;
+				transition-duration: 0.1s;
+				border-bottom: 1px dotted $color-link-hover;
+			}
 		}
 
 	}

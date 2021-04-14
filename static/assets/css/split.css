@@ -247,7 +247,13 @@ body.page-template-page-fullsingle-split {
     font-size: 12px;
     line-height: 14px; }
     .split-credit p a {
-      color: #848d96; }
+      color: #848d96;
+      transition-duration: 0.5s;
+      border-bottom: 1px dotted #848d96; }
+      .split-credit p a:hover {
+        color: #008000;
+        transition-duration: 0.1s;
+        border-bottom: 1px dotted #008000; }
 
 .split-video {
   overflow: hidden;
